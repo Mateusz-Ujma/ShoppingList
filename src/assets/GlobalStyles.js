@@ -1,13 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
+import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100svw;
     height: 100svh;
-    background:#999;
+    background:${theme.colors.backGroundLight};
+    color:${theme.colors.fontColorLight};
   }
   html {
     box-sizing: border-box;
